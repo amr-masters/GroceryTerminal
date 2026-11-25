@@ -54,16 +54,12 @@ Preferences prefs;
 
 // ---------------- NETWORK SETTINGS ----------------
 
-const char* WIFI_SSID = "MyNetwork";
-const char* WIFI_PASSWORD = "MyPassword";
-
-// Use a long, randomly generated topic name.
-// Subscribe to the same topic in the ntfy phone app.
-const char* NTFY_TOPIC = "MyTopic";
-
-// Prototype only: TLS certificate validation is disabled below.
-// Install a trusted CA certificate before deploying this device.
-const char* NTFY_URL = "https://ntfy.sh/";
+// secrets.h provides the macros used below
+#include "secrets.h"
+const char* NTFY_TOPIC = NTFY_TOPIC_D;
+const char* NTFY_URL = NTFY_URL_D;
+const char* WIFI_SSID = WIFI_SSID_D; //"Leafy_Hollow";
+const char* WIFI_PASSWORD = WIFI_PASSWORD_D; //"Telugu2010";
 
 // ---------------- COLORS ----------------
 
